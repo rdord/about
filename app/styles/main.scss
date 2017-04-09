@@ -1,0 +1,151 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+
+  span {
+    font-family: "Arial Narrow", Arial, sans-serif;
+  }
+}
+
+.hide-md {
+  @media (min-width: 640px) {
+    @media (max-width: 969px) {
+      display: none;
+    }
+  }
+}
+
+.player-wrapper {
+  position:absolute;
+  height:100%;
+  width:100%;
+
+  @media (min-width: 640px) {
+    overflow: hidden;
+  }
+}
+
+#player {
+  display: none;
+
+  @media (min-width: 640px) {
+    display: inline;
+    min-width: 100%;
+    min-height: 100%
+  }
+}
+
+.overlay {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+
+  @media (min-width: 640px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.column--primary,
+.column--secondary {
+  @media (min-width: 640px) {
+    width: 12vh;
+  }
+
+  @media (min-width: 970px) {
+    width: 22vh;
+  }
+
+  @media (min-width: 1160px) {
+    width: 32vh;
+  }
+}
+
+.column--primary {
+  color: darkgray;
+  // background-color: red;
+
+  h1 {
+    color: yellow;
+  }
+
+  ul, p {
+    font-family: "Arial Narrow", Arial, sans-serif;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 640px) {
+    order: 3;
+  } 
+}
+
+.column--secondary {
+  color: gray;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
+  
+  @media (min-width: 970px) {
+    display: block;
+    order: 1;
+    text-align: right;
+  }
+}
+
+.column--tertiary {
+  display: none;
+
+  @media (min-width: 640px) {
+    display: block;
+    width: 69vh;
+    order: 2;
+  }
+  
+  @media (min-width: 970px) {
+    width: 57vh;
+  }
+}
+
+.highlight {
+  color: yellow;
+}
+
+.watermark {
+  display: none;
+
+  @media (min-width: 1150px) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    display: block;
+  }
+}
