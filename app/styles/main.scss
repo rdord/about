@@ -74,6 +74,12 @@ ul {
     width: 12vh;
   }
 
+  @media (min-width: 740px) {
+    @media (min-height: 1024px) {
+      width: 8vh;  
+    }
+  }
+
   @media (min-width: 970px) {
     width: 22vh;
   }
@@ -85,7 +91,6 @@ ul {
 
 .column--primary {
   color: darkgray;
-  // background-color: red;
 
   h1 {
     color: yellow;
@@ -101,7 +106,7 @@ ul {
 
   @media (min-width: 640px) {
     order: 3;
-  } 
+  }
 }
 
 .column--secondary {
@@ -125,6 +130,12 @@ ul {
     display: block;
     width: 69vh;
     order: 2;
+  }
+
+  @media (min-width: 768px) {
+    @media (min-height: 1024px) {
+      width: 65vh;  
+    }
   }
   
   @media (min-width: 970px) {
